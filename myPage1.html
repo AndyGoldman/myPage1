@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Andy's Page</title>
+			<meta charset="utf-8">
+			<link href="myPage1.css" type="text/css" rel="stylesheet">
+			<link href='http://fonts.googleapis.com/css?family=Exo+2:300' rel='stylesheet' type='text/css'>
+			<!-- mbostock’s block #7833311 December 6, 2013 -->
+			<script src="http://d3js.org/d3.v3.min.js"></script>
+			<script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
+	</head>
+	<body>
+		<header>
+				<!-- mbostock’s block #7833311 December 6, 2013 -->
+				<script>
+					var width = 1280,
+    					height = 120,
+							i = -1,
+    					θ = 0,
+    					δθ = .03,
+    					n = 2000,
+    					k = 20; // samples to replace per frame
+
+					var randomX = d3.random.normal(width / 2, 80),
+							randomY = d3.random.normal(height / 2, 80),
+    					points = d3.range(n).map(function() { return [randomX(), randomY()]; });
+
+					var color = d3.scale.linear()
+    					.domain([0, 20])
+    					.range(["white", "steelblue"])
+    					.interpolate(d3.interpolateLab);
+
+					var hexbin = d3.hexbin()
+    					.size([width, height])
+    					.radius(20);
+
+					var svg = d3.select("header").append("svg")
+    					.attr("width", width)
+    					.attr("height", height);
+
+					var hexagon = svg.append("g")
+    					.attr("class", "hexagons")
+  						.selectAll("path")
+    					.data(hexbin(points))
+  						.enter().append("path")
+    					.attr("d", hexbin.hexagon(19.5))
+    					.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+    					.style("fill", function(d) { return color(d.length); });
+
+					d3.timer(function() {
+  					θ += δθ;
+  					randomX = d3.random.normal(width / 2 + 80 * Math.cos(θ), 80),
+  					randomY = d3.random.normal(height / 2 + 80 * Math.sin(θ), 80);
+
+  					for (var j = 0; j < k; ++j) {
+    				i = (i + 1) % n;
+						points[i][0] = randomX();
+    				points[i][1] = randomY();
+  					}
+
+  					hexagon = hexagon
+      			.data(hexbin(points), function(d) { return d.i + "," + d.j; });
+
+  					hexagon.exit().remove();
+
+  					hexagon.enter().append("path")
+      			.attr("d", hexbin.hexagon(19.5))
+      			.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+  					hexagon
+      			.style("fill", function(d) { return color(d.length); });
+						});
+
+				</script>
+				<div id = "topDiv"></div>
+				<!-- <a href = img></a> -->
+				<img src = "hexagon-logo-150x150.png">
+				<tagline>...busy, busy, busy...</tagline>
+		</header>
+		<sidebar>
+			  <input type="button" id="button1" name="HTML5" value="HTML5" class="menuButton">
+        <input type="button" id="button2" name="CSS" value="CSS" class="menuButton">
+        <input type="button" id="button3" name="JavaScript" value="JavaScript" class="menuButton">
+				<input type="button" id="button4" name="jQuery" value="jQuery" class="menuButton">
+		</sidebar>
+		<main>
+		
+		</main>
+		<footer>
+			<div id = "bottomDiv"></div>
+		</footer>
+	</body>
+</html>
