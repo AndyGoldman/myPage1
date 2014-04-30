@@ -61,11 +61,47 @@ sidebar{
 
 #button1 {
     width: 128px;
-    height: 40px;
+    height: 36px;
     background-color: #23415A;
     position: relative;
 		left: 114px;
 		top: 30px;
+    color: white;
+    font-size: 1.0em;
+    box-shadow: 1.5px 1.5px 5px #888888;   
+}
+
+#button2 {
+    width: 128px;
+    height: 36px;
+    background-color: #23415A;
+    position: relative;
+		left: 114px;
+		top: 70px;
+    color: white;
+    font-size: 1.0em;
+    box-shadow: 1.5px 1.5px 5px #888888;   
+}
+
+#button3 {
+    width: 128px;
+    height: 36px;
+    background-color: #23415A;
+    position: relative;
+		left: 114px;
+		top: 110px;
+    color: white;
+    font-size: 1.0em;
+    box-shadow: 1.5px 1.5px 5px #888888;   
+}
+
+#button4 {
+    width: 128px;
+    height: 36px;
+    background-color: #23415A;
+    position: relative;
+		left: 114px;
+		top: 140px;
     color: white;
     font-size: 1.0em;
     box-shadow: 1.5px 1.5px 5px #888888;   
