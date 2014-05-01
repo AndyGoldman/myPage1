@@ -5,6 +5,7 @@
 			<meta charset="utf-8">
 			<link href="myPage1.css" type="text/css" rel="stylesheet">
 			<link href='http://fonts.googleapis.com/css?family=Exo+2:300' rel='stylesheet' type='text/css'>
+			<script src="jquery-1.11.0.min.js"></script>
 			<!-- mbostock’s block #7833311 December 6, 2013 -->
 			<script src="http://d3js.org/d3.v3.min.js"></script>
 			<script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
@@ -73,15 +74,40 @@
 
 				</script>
 				<div id = "topDiv"></div>
-				<!-- <a href = img></a> -->
-				<img src = "hexagon-logo-150x150.png">
+					<a href = "home.html"> 
+						<img src = "hexagon-logo-150x150.png" id = "logo">
+					</a>
 				<tagline>...busy, busy, busy...</tagline>
 		</header>
 		<sidebar>
-			  <input type="button" id="button1" name="HTML5" value="HTML5" class="menuButton">
-        <input type="button" id="button2" name="CSS" value="CSS" class="menuButton">
-        <input type="button" id="button3" name="JavaScript" value="JavaScript" class="menuButton">
-				<input type="button" id="button4" name="jQuery" value="jQuery" class="menuButton">
+				<ul class="a">
+			  	<li>
+						<a><input type="button" id="button1" name="HTML5" value="html5" class="menuButton"></a>
+					</li>
+        	<li>
+						<a><input type="button" id="button2" name="CSS" value="css" class="menuButton"></a>
+					</li>
+        	<li>
+						<a><input type="button" id="button3" name="JavaScript" value="javascript" class="menuButton"></a>
+					</li>
+					<li>
+						<a><input type="button" id="button4" name="jQuery" value="jQuery" class="menuButton"></a>
+							<ul class="a">
+			  				<li>
+									<a><input type="button" id="button4a" name="jQuery 1" value="jQuery 1" class="jQueryButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button4b" name="jQuery 2" value="jQuery 2" class="jQueryButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button4c" name="jQuery 3" value="jQuery 3" class="jQueryButton"></a>
+								</li>
+								<li>
+									<a><input type="button" id="button4d" name="jQuery 4" value="jQuery 4" class="jQueryButton"></a>
+								</li>
+							</ul>
+					</li>
+				</ul>
 		</sidebar>
 		<main>
 		
