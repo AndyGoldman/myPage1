@@ -70,55 +70,29 @@ ul.a{
 		border-radius: 8px;
     background-color: #23415A;
 	  position: relative;
+		margin-bottom: 15px;
 		left: 60px;
     color: white;
     font-size: 1.0em;
     box-shadow: 1.5px 1.5px 5px #888888; 
 }
-	
-#button1 {
-		top: 15px;
-}
 
-#button2 {
-		top: 30px;
-}
-
-#button3 {
-		top: 45px;
-}
-
-#button4 {
-		top: 60px;
-}
-
-.jQueryButton {
+.submenuButton {
 	 	width: 96px;
     height: 24px;
 		border-radius: 4px:
     background-color: white;
 	  position: relative;
-		top: -80px;
+		margin-bottom: 0px;
+		top: -15px;
 		left: 148px;
     color: #23415A;
     font-size: 0.75em;
     box-shadow: 1.5px 1.5px 5px #888888;
-		display:none
-}
 
-#button4a {
-		top: 32px;
 }
-
-#button4b {
-		top: 32px;
-}
-
-#button4c {
-		top: 32px;
-}
-#button4d {
-		top: 32px;
+.submenu {
+		display: none;	
 }
 
 #bottomDiv{

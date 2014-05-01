@@ -5,7 +5,7 @@
 			<meta charset="utf-8">
 			<link href="myPage1.css" type="text/css" rel="stylesheet">
 			<link href='http://fonts.googleapis.com/css?family=Exo+2:300' rel='stylesheet' type='text/css'>
-			<script src="jquery-1.11.0.min.js"></script>
+			<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 			<!-- mbostock’s block #7833311 December 6, 2013 -->
 			<script src="http://d3js.org/d3.v3.min.js"></script>
 			<script src="http://d3js.org/d3.hexbin.v0.min.js"></script>
@@ -14,7 +14,7 @@
 	<body>
 		<header>
 				<!-- mbostock’s block #7833311 December 6, 2013 -->
-				<script src = "myPage1.js"></script>
+				<script src="myPage1.js"></script>
 				<div id = "topDiv"></div>
 					<a href = "home.html"> 
 						<img src="hexagon-logo-150x150.png" id = "logo">
@@ -23,29 +23,71 @@
 		</header>
 		<sidebar>
 				<ul class="a">
-			  	<li>
+			  	<li class = "navButton">
 						<a><input type="button" id="button1" name="HTML5" value="html5" class="menuButton"></a>
-					</li>
-        	<li>
-						<a><input type="button" id="button2" name="CSS" value="css" class="menuButton"></a>
-					</li>
-        	<li>
-						<a><input type="button" id="button3" name="JavaScript" value="javascript" class="menuButton"></a>
-					</li>
-					<li>
-						<a><input type="button" id="button4" name="jQuery" value="jQuery" class="menuButton"></a>
-							<ul class="a">
+							<ul class="a submenu">
 			  				<li>
-									<a><input type="button" id="button4a" name="jQuery 1" value="jQuery 1" class="jQueryButton"></a>
+									<a><input type="button" id="button1a" name="html5 1" value="html5 1" class="submenuButton"></a>
 								</li>
         				<li>
-									<a><input type="button" id="button4b" name="jQuery 2" value="jQuery 2" class="jQueryButton"></a>
+									<a><input type="button" id="button1b" name="html5 2" value="html5 2" class="submenuButton"></a>
 								</li>
         				<li>
-									<a><input type="button" id="button4c" name="jQuery 3" value="jQuery 3" class="jQueryButton"></a>
+									<a><input type="button" id="button1c" name="html5 3" value="html5 3" class="submenuButton"></a>
 								</li>
 								<li>
-									<a><input type="button" id="button4d" name="jQuery 4" value="jQuery 4" class="jQueryButton"></a>
+									<a><input type="button" id="button1d" name="html5 4" value="html5 4" class="submenuButton"></a>
+								</li>
+							</ul>
+					</li>
+        	<li class = "navButton">
+						<a><input type="button" id="button2" name="CSS" value="css" class="menuButton"></a>
+							<ul class="a submenu">
+			  				<li>
+									<a><input type="button" id="button2a" name="css 1" value="css 1" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button2b" name="css 2" value="css 2" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button2c" name="css 3" value="css 3" class="submenuButton"></a>
+								</li>
+								<li>
+									<a><input type="button" id="button2d" name="css 4" value="css 4" class="submenuButton"></a>
+								</li>
+							</ul>
+					</li>
+        	<li class = "navButton">
+						<a><input type="button" id="button3" name="JavaScript" value="javascript" class="menuButton"></a>
+							<ul class="a submenu">
+			  				<li>
+									<a><input type="button" id="button3a" name="javascript 1" value="javascript 1" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button3b" name="javascript 2" value="javascript 2" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button3c" name="javascript 3" value="javascript 3" class="submenuButton"></a>
+								</li>
+								<li>
+									<a><input type="button" id="button3d" name="javascript 4" value="javascript 4" class="submenuButton"></a>
+								</li>
+							</ul>
+					</li>
+					<li class = "navButton">
+						<a><input type="button" id="button4" name="jQuery" value="jQuery" class="menuButton"></a>
+							<ul class="a submenu">
+			  				<li>
+									<a><input type="button" id="button4a" name="jQuery 1" value="jQuery 1" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button4b" name="jQuery 2" value="jQuery 2" class="submenuButton"></a>
+								</li>
+        				<li>
+									<a><input type="button" id="button4c" name="jQuery 3" value="jQuery 3" class="submenuButton"></a>
+								</li>
+								<li>
+									<a><input type="button" id="button4d" name="jQuery 4" value="jQuery 4" class="submenuButton"></a>
 								</li>
 							</ul>
 					</li>
