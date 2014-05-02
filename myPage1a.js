@@ -5,7 +5,4 @@ $(document).ready(function (){
 		$('.navButton').mouseleave(function (){
 		$(this).children('.submenu').slideToggle('slow');
 	});
-	$('.submenuButton').mouseenter(function (){
-		$(this).children('.submenu').show();
-	});
 });

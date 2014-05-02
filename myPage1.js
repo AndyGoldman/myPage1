@@ -4,7 +4,7 @@
     					θ = 0,
     					δθ = .03,
     					n = 2000,
-    					k = 30; // samples to replace per frame
+    					k = 10; // samples to replace per frame
 
 					var randomX = d3.random.normal(width / 2, 80),
 							randomY = d3.random.normal(height / 2, 80),
